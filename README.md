@@ -1,1 +1,0 @@
-# g-sashi10.github.io
