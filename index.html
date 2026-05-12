@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sashikant Gupta — Designer · Developer · Filmmaker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#home" class="logo">Sashikant<span>.</span></a>
+    <ul id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-end">
+      <button id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <button class="nav-cta" onclick="location.href='#contact'">Let's talk</button>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-eyebrow">Video Editor · Graphic Designer · Web Developer</p>
+        <h1 class="hero-title">
+          Code, design<br>
+          <em>&amp; film —</em><br>
+          editing .
+        </h1>
+        <p class="hero-sub">
+          I'm Sashikant — a BSc (Hons) IT student with 4+ years of freelance experience
+          in video editing, graphic design, and web development. I bring ideas to life
+          across every medium.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-dark">See my work</a>
+          <a href="#contact" class="btn-line">Get in touch</a>
+          <a href="Sashikant_cv.pdf" download class="btn-line">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-frame">
+          <div class="photo-deco-corner tl"></div>
+          <div class="photo-deco-corner br"></div>
+          <div class="photo-deco-dot"></div>
+          <div class="hero-img-wrap">
+            <img src="sashi3.jpeg" alt="Sashikant Gupta" id="heroPhoto"/>
+            <div class="photo-fallback" id="photoFallback"><i class="fas fa-user"></i></div>
+          </div>
+          <div class="photo-label">
+            <span>Sashikant Gupta</span>
+            <span class="photo-label-role">BSc (Hons) Computing · Informatics College Pokhara</span>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>4+</strong>
+            <span>Years freelancing</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Projects done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>3</strong>
+            <span>Disciplines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Video Editing</span><span class="dot">·</span>
+      <span>UI / UX Design</span><span class="dot">·</span>
+      <span>Web Development</span><span class="dot">·</span>
+      <span>Graphic Design</span><span class="dot">·</span>
+      <span>Banner Design</span><span class="dot">·</span>
+      <span>Thumbnail Design</span><span class="dot">·</span>
+      <span>Cloud Computing</span><span class="dot">·</span>
+      <span>AI Prompting</span><span class="dot">·</span>
+      <span>Video Editing</span><span class="dot">·</span>
+      <span>UI / UX Design</span><span class="dot">·</span>
+      <span>Web Development</span><span class="dot">·</span>
+      <span>Graphic Design</span><span class="dot">·</span>
+      <span>Banner Design</span><span class="dot">·</span>
+      <span>Thumbnail Design</span><span class="dot">·</span>
+      <span>Cloud Computing</span><span class="dot">·</span>
+      <span>AI Prompting</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- WORK / PROJECTS -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-label">Selected Work</div>
+      <h2 class="section-title">Things I've<br><em>built &amp; made</em></h2>
+
+      <div class="work-grid">
+
+        <!-- Watch E-Commerce -->
+        <div class="work-card reveal" data-index="0">
+          <div class="work-img work-img-1">
+            <div class="work-overlay"><span>Web Dev</span></div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-tag">E-Commerce · HTML · CSS</span>
+              <div class="work-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3>Watch E-Commerce Website</h3>
+            <p>A full e-commerce site for selling watches — homepage, product listings, and navigation. Built with HTML &amp; CSS, developed in VS Code.</p>
+          </div>
+        </div>
+
+        <!-- Gym Management -->
+        <div class="work-card reveal" data-index="1">
+          <div class="work-img work-img-2">
+            <div class="work-overlay"><span>Java · OOP</span></div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-tag">CLI App · Java · BlueJ</span>
+              <div class="work-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Gym Management System</h3>
+            <p>CLI-based gym management app built in Java using BlueJ. Handles member records, registrations, and operations using OOP — classes, objects, and methods.</p>
+          </div>
+        </div>
+
+        <!-- Water Tank -->
+        <div class="work-card reveal" data-index="2">
+          <div class="work-img work-img-4">
+            <div class="work-overlay"><span>Hardware · IoT</span></div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-tag">Academic · Embedded Systems</span>
+              <div class="work-links">
+                <a href="https://www.linkedin.com/posts/sashikant-gupta-56b97633b_iot-arduino-automation-ugcPost-7421060686627135488-isRZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFVk_qMBuMX_hzHDBpkkE-QVpifWDnol-g0" title="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3>Automatic Water Tank System</h3>
+            <p>Designed an automatic water tank system to prevent overflow. Implemented motor ON/OFF logic based on water level sensors as part of academic coursework.</p>
+          </div>
+        </div>
+
+        <!-- Freelance Creative -->
+        <div class="work-card reveal" data-index="3">
+          <div class="work-img work-img-3">
+            <div class="work-overlay"><span>Design + Video</span></div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-tag">Freelance · 2021 – Present</span>
+              <div class="work-links">
+                <a href="https://www.youtube.com/watch?v=yr62CWHWudQ&list=PLT8WKz0Yi5i9-9yoSliB4072wq_DhGKjJ" title="Hire me"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3>Freelance Video &amp; Design Work</h3>
+            <p>4+ years editing videos for music projects and real estate promotions. Designed banners, thumbnails, and social media graphics. Delivered projects on time for multiple clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience" class="section about-section">
+    <div class="container">
+      <div class="section-label">Background</div>
+      <h2 class="section-title">Experience &amp;<br><em>Education</em></h2>
+
+      <div class="exp-grid">
+
+        <div class="exp-col">
+          <h3 class="exp-col-title"><i class="fas fa-briefcase"></i> Experience</h3>
+
+          <div class="exp-item reveal">
+            <div class="exp-dot"></div>
+            <div class="exp-body">
+              <div class="exp-header">
+                <strong>Freelance Video Editor &amp; Graphic Designer</strong>
+                <span class="exp-date">2021 – Present</span>
+              </div>
+              <p class="exp-place">Self-employed</p>
+              <ul class="exp-list">
+                <li>Edited videos for music projects and real estate promotional content</li>
+                <li>Designed banners, thumbnails, and social media graphics for clients</li>
+                <li>Applied transitions, effects, and colour correction in video projects</li>
+                <li>Managed multiple projects simultaneously and delivered on time</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-col">
+          <h3 class="exp-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+          <div class="exp-item reveal">
+            <div class="exp-dot"></div>
+            <div class="exp-body">
+              <div class="exp-header">
+                <strong>Bachelor in Information Technology (BSc IT)</strong>
+                <span class="exp-date">2023 – Present</span>
+              </div>
+              <p class="exp-place">Informatics College Pokhara</p>
+              <p class="exp-note">Currently in 2nd Year — studying web development, networking, cloud computing, and software engineering.</p>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-dot"></div>
+            <div class="exp-body">
+              <div class="exp-header">
+                <strong>Higher Secondary Education (Class 12)</strong>
+              </div>
+              <p class="exp-place">Himal College of Management</p>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-dot"></div>
+            <div class="exp-body">
+              <div class="exp-header">
+                <strong>Secondary Education (Class 10)</strong>
+              </div>
+              <p class="exp-place">Fewa Public Secondary Boarding School</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-img-col reveal">
+        <div class="about-img-wrap">
+          <img src="sashi2.jpeg" alt="Sashikant" id="aboutPhoto"/>
+          <div class="about-img-fallback" id="aboutFallback"><i class="fas fa-user"></i></div>
+          <div class="about-tag-float">
+            <i class="fas fa-graduation-cap"></i>
+            BSc (Hons) Computing · 2nd Year
+          </div>
+        </div>
+      </div>
+      <div class="about-text-col reveal">
+        <div class="section-label">About me</div>
+        <h2 class="section-title">I wear a few<br><em>different hats.</em></h2>
+        <p>
+          I'm a second-year BSc IT student at Informatics College Pokhara. I've been freelancing
+          as a video editor and graphic designer since 2021 — working on music videos, real estate
+          promos, banners, and thumbnails for clients.
+        </p>
+        <p>
+          Alongside the creative work, I build web apps and explore cloud computing, networking,
+          and AI tools. I use ChatGPT and Gemini daily for research, automation, and prompt
+          engineering. I like being the person who can handle both the technical and the visual side.
+        </p>
+        <div class="about-pills">
+          <span><i class="fas fa-film"></i> Video Editing</span>
+          <span><i class="fas fa-palette"></i> Graphic Design</span>
+          <span><i class="fas fa-code"></i> Web Development</span>
+          <span><i class="fas fa-pen-ruler"></i> UI / UX Design</span>
+          <span><i class="fas fa-cloud"></i> Cloud Computing</span>
+          <span><i class="fas fa-robot"></i> AI Tools</span>
+        </div>
+        <a href="#contact" class="btn-dark" style="display:inline-flex;margin-top:8px">Work with me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section about-section">
+    <div class="container">
+      <div class="section-label">What I bring</div>
+      <h2 class="section-title">Skills &amp;<br><em>tools I use</em></h2>
+
+      <div class="skills-cols">
+
+        <!-- Programming -->
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Programming</h3>
+          <div class="bar-list">
+            <div class="bar-item">
+              <div class="bar-top"><span>HTML / CSS</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>Python</span><span>70%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>Java</span><span>65%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>SQL</span><span>72%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="72"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>JavaScript</span><span>60%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative -->
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Creative</h3>
+          <div class="bar-list">
+            <div class="bar-item">
+              <div class="bar-top"><span>Video Editing</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>Banner / Thumbnail Design</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>UI / UX Design</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>AI Prompt Engineering</span><span>80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-top"><span>Colour Correction</span><span>82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Tools &amp; Platforms</h3>
+          <div class="tool-chips">
+            <span><i class="fab fa-github"></i> GitHub</span>
+            <span><i class="fas fa-terminal"></i> VS Code</span>
+            <span><i class="fab fa-figma"></i> Figma</span>
+            <span><i class="fas fa-pen-nib"></i> Canva</span>
+            <span><i class="fas fa-database"></i> MySQL</span>
+            <span><i class="fas fa-network-wired"></i> Networking</span>
+            <span><i class="fas fa-cloud"></i> Cloud Computing</span>
+            <span><i class="fas fa-robot"></i> AI Prompting</span>
+            <span><i class="fas fa-video"></i> Video Editing SW</span>
+            <span><i class="fas fa-image"></i> Photo Editing SW</span>
+            <span><i class="fab fa-java"></i> BlueJ</span>
+            <span><i class="fab fa-java"></i> JavaScript</span>
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-database"></i> SQL</span>
+            <span><i class="fab fa-html5"></i> HTML</span>
+            <span><i class="fab fa-css3-alt"></i> CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-top">
+        <div class="section-label">Let's connect</div>
+        <h2 class="section-title">Got a project?<br><em>Let's make it.</em></h2>
+        <p class="contact-sub">Whether it's a website, a video, a brand — or all three — I'd love to hear about it.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:sashikantg07@gmail.com" class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-text">
+              <span>Email</span>
+              <strong>sashikantg07@gmail.com</strong>
+            </div>
+            <i class="fas fa-arrow-right ci-arrow"></i>
+          </a>
+          <a href="https://github.com/Sashi077" target="_blank" class="contact-item">
+            <div class="ci-icon"><i class="fab fa-github"></i></div>
+            <div class="ci-text">
+              <span>GitHub</span>
+              <strong>github.com/Sashi077</strong>
+            </div>
+            <i class="fas fa-arrow-right ci-arrow"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sashikant-gupta-56b97633b/" target="_blank" class="contact-item">
+            <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="ci-text">
+              <span>LinkedIn</span>
+              <strong>sashikant-gupta-56b97633b</strong>
+            </div>
+            <i class="fas fa-arrow-right ci-arrow"></i>
+          </a>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal">
+          <div class="form-row">
+            <div class="fg">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required/>
+            </div>
+            <div class="fg">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required/>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="subject">What's it about?</label>
+            <select id="subject">
+              <option value="">Select a service</option>
+              <option>Web Development</option>
+              <option>UI / UX Design</option>
+              <option>Video Editing</option>
+              <option>Graphic Design</option>
+              <option>Banner / Thumbnail</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-dark full-w">Send message <i class="fas fa-arrow-right"></i></button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-circle-check"></i> Got it — I'll be in touch soon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Sashikant<span>.</span></span>
+      <p>© 2026 · Informatics College Pokhara</p>
+      <div class="footer-links">
+        <a href="https://github.com/Sashi077" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sashikant-gupta-56b97633b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:sashikantg07@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
