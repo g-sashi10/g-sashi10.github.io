@@ -1,4 +1,4 @@
-﻿// ===== NAVBAR =====
+// ===== NAVBAR =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('stuck', window.scrollY > 30);
@@ -76,12 +76,41 @@ imgFallback('aboutPhoto', 'aboutFallback');
 // ===== CONTACT FORM =====
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
-    const s = document.getElementById('formSuccess');
-    s.classList.add('show');
-    this.reset();
-    setTimeout(() => s.classList.remove('show'), 4000);
+    const btn = form.querySelector('button[type="submit"]');
+    const success = document.getElementById('formSuccess');
+    const originalText = btn.innerHTML;
+
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        success.classList.add('show');
+        form.reset();
+        setTimeout(() => success.classList.remove('show'), 5000);
+      } else {
+        console.error('Web3Forms error:', data);
+        alert('Error: ' + (data.message || 'Unknown error. Check console.'));
+      }
+    } catch (err) {
+      console.error('Fetch error:', err);
+      alert('Network error. Please email sashikantg07@gmail.com directly.');
+    }
+
+    btn.innerHTML = originalText;
+    btn.disabled = false;
   });
 }
 
