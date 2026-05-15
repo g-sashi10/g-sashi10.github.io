@@ -427,7 +427,10 @@
           </a>
         </div>
 
-        <form id="contactForm" class="contact-form reveal">
+        <form id="contactForm" class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9e51f915-aca9-4fd9-9938-76aebc454464">
+          <input type="hidden" name="subject" value="New Portfolio Contact">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
           <div class="form-row">
             <div class="fg">
               <label for="name">Name</label>
